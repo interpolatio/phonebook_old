@@ -1,0 +1,10 @@
+.phonebook.ko.cmd
+.phonebook.mod.o.cmd
+.phonebook.o.cmd
+.tmp_versions/
+Module.symvers
+modules.order
+phonebook.ko
+phonebook.mod.c
+phonebook.mod.o
+phonebook.o
