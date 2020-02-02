@@ -91,7 +91,7 @@ static ssize_t
 
 device_write( struct file *filp, const char *buff, size_t len, loff_t * off )
 {
- printk("%.*s", count, buf);
+ //printk("%.*s",  buff);
  printk( "Sorry, this operation isn't supported.\n" );
  return -EINVAL;
 }
