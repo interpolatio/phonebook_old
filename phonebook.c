@@ -2,6 +2,7 @@
 #include <linux/module.h> /* Эта частичка древней магии, которая оживляет модули */
 #include <linux/init.h> /* Определения макросов */
 #include <linux/fs.h>
+#include <linux/uaccess.h>
 #include <asm/uaccess.h> /* put_user */
 
 // Ниже мы задаём информацию о модуле, которую можно будет увидеть с помощью Modinfo
