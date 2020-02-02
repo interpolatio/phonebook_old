@@ -91,9 +91,10 @@ static ssize_t
 
 device_write( struct file *filp, const char *buff, size_t len, loff_t * off )
 {
- //printk("%.*s",  buff);
- printk( "Sorry, this operation isn't supported.\n" );
- return -EINVAL;
+	int rv;
+	printk(KERN_INFO "phonebook: write to device \n");
+	rv = copy_from_user(text, buff, len);
+	return rv;
 }
 
 static ssize_t device_read( struct file *filp, /* include/linux/fs.h */
